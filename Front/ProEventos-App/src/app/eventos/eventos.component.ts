@@ -18,26 +18,26 @@ export class EventosComponent implements OnInit {
   }
 
   public getEventos(): void {
-    // this.http.get(this.url).subscribe(
-    //   response => this.eventos = response,
-    //   error => console.log(error)
-    // );
+    this.http.get(this.url).subscribe(
+      response => this.eventos = response,
+      error => console.log(error)
+    );
 
 
 
-    this.eventos = [
-      {
-        Tema: 'Evento A',
-        Local: ''
-      },
-      {
-        Tema: 'Evento B',
-        Local: ''
-      },
-      {
-        Tema: 'Evento C',
-        Local: ''
-      },
-    ]
+    // this.eventos = [
+    //   {
+    //     Tema: 'Evento A',
+    //     Local: ''
+    //   },
+    //   {
+    //     Tema: 'Evento B',
+    //     Local: ''
+    //   },
+    //   {
+    //     Tema: 'Evento C',
+    //     Local: ''
+    //   },
+    // ]
   }
 }
